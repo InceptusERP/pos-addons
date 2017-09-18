@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <template id="ies_pos_brand" inherit_id="point_of_sale.assets" name="ies pos brand assets">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/ies_pos_brand/static/src/js/pos_brand.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

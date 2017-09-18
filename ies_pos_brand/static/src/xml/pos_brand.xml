@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="Chrome">
+        <t t-jquery=".pos-logo" t-operation="replace">
+            <img class="pos-logo" src="" style="margin-top: 5px;"/>
+        </t>
+    </t>
+    
+    <t t-extend="PosTicket">
+        <t t-jquery=".pos-center-align" t-operation="before">
+            <center><img class="pos-logo" t-att-src="pos_image" style="margin: 5px 0px 5px 0px;"/></center>
+        </t>
+    </t>
+</templates>
